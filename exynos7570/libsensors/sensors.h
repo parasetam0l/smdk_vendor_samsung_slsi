@@ -72,14 +72,14 @@ __BEGIN_DECLS
 #define ACCEL_MAX_RANGE		    (2*GRAVITY_EARTH)
 #define ACCEL_POWER		    0.230f
 #define ACCEL_MAX_ODR		    50.0f
-#define ACCEL_FASTEST_DELTATIME	    (1.0f/ACCEL_MAX_ODR)*1000.0f*1000.0f
+#define ACCEL_FASTEST_DELTATIME	    20000 //(1.0f/ACCEL_MAX_ODR)*1000.0f*1000.0f
 #define CONVERT_A                   (GRAVITY_EARTH/1000.0f)
 
 // conversion of magnetic data to uT units (10mG = 1uT)
 #define MAG_MAX_RANGE		    800.0f
 #define MAG_POWER		    0.230f
 #define MAG_MAX_ODR		    50.0f
-#define MAG_FASTEST_DELTATIME	    (1.0f/MAG_MAX_ODR)*1000.0f*1000.0f
+#define MAG_FASTEST_DELTATIME	    20000 //(1.0f/MAG_MAX_ODR)*1000.0f*1000.0f
 #define CONVERT_M                   (1.0f/10.0f) // from mG to uT
 
 // conversion of gyro data to SI units
@@ -88,14 +88,14 @@ __BEGIN_DECLS
 #define GYR_MAX_RANGE		    DEGR2RAD(2000.0f)
 #define GYR_POWER		    6.1f
 #define GYR_MAX_ODR		    50.0f
-#define GYR_FASTEST_DELTATIME	    (1.0f/GYR_MAX_ODR)*1000.0f*1000.0f
+#define GYR_FASTEST_DELTATIME	    20000 //(1.0f/GYR_MAX_ODR)*1000.0f*1000.0f
 #define CONVERT_GYRO                1.0f/1000.0f // from mdps to dps
 
 // conversion of Pressure data to hPa, 1hPa = 1 mBar
 #define PRESS_MAX_RANGE		    1260.0f
 #define PRESS_POWER		    0.15f
 #define PRESS_MAX_ODR		    25.0f
-#define PRESS_FASTEST_DELTATIME	    (1.0f/PRESS_MAX_ODR)*1000.0f*1000.0f
+#define PRESS_FASTEST_DELTATIME	    40000 //(1.0f/PRESS_MAX_ODR)*1000.0f*1000.0f
 #define CONVERT_PRESS                1.0f
 
 // conversion of Pressure data to Celsius
